@@ -1,6 +1,6 @@
 public int x;
 public int y;
-public int len=20;
+public int leng=20;
 public void setup() {
   size(400, 400);
   x=0;
@@ -14,8 +14,8 @@ public void setup() {
 
 public void draw() {
   background(0);
-  len+=2;
-  sierpinski(x, y, len);
+  leng+=2;
+  sierpinski(x, y, leng);
   text("Zoom: "+len/10, 20, 20);
 }
 
