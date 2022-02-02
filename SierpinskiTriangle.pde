@@ -16,7 +16,7 @@ public void draw() {
   background(0);
   leng+=2;
   sierpinski(x, y, leng);
-  text("Zoom: "+leng/10, 20, 20);
+  text("Zoom: "+(int)(leng/10), 20, 20);
 }
 
 public void sierpinski(int x, int y, int len) {
