@@ -6,13 +6,16 @@ public void setup() {
   x=0;
   y=400;
   noFill();
-  noStroke();
   background(0);
-  fill(0, 255, 0);
+  noStroke();
+  fill(0,255,0);
   textSize(20);
 }
 
 public void draw() {
+  if (leng/10>=540) {
+    return;
+  }
   background(0);
   leng+=2;
   sierpinski(x, y, leng);
